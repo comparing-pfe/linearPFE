@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #Definition of the interrupt handler routine. Invoked when Ctrl+c/z is encountered.
 exitfn () {
     trap SIGINT

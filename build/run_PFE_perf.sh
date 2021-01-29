@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script can be used to automatically run experiments for
 # multiple numbers of gates (10 iterations each)
@@ -30,7 +30,7 @@ echo $clientserver
 fileprefix="perf_`date +'%Y-%m-%d-%H%M'`_${clientserver}_"
 echo $fileprefix
 
-for g in 1000 10000 100000 1000000
+for g in 100 1000 10000 100000
 do
 	echo "Running with g = $g gates"
 	for i in {1..10}
@@ -47,5 +47,3 @@ do
 	echo "Runtime (averaged): $time_total"
 
 done
-
-
