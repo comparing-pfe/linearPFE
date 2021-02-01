@@ -16,13 +16,6 @@ else
 	exit
 fi
 
-make
-if [ $? -ne 0 ];
-then
-	echo "make failed"
-	exit
-fi
-
 cs=(SERVER CLIENT)
 clientserver=${cs[$r]}
 echo $clientserver
